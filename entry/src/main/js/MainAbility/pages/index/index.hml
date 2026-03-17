@@ -1,0 +1,20 @@
+<div class="container">
+    <text class="title">Vital Monitor</text>
+
+    <text class="status-msg">{{statusMessage}}</text>
+
+    <div class="heart-rate-box">
+        <image src="/common/heart.png" class="heart-icon"></image>
+        <text class="bpm-value" style="color: {{bpmColor}};">{{heartRate}}</text>
+        <text class="unit">BPM</text>
+    </div>
+
+    <div class="sensor-box">
+        <text class="sensor-label">Wrist Angle (Z):</text>
+        <text class="sensor-data">{{accelZ}}</text>
+    </div>
+
+    <div class="custom-btn" onclick="goToDetail">
+        <text class="btn-text">Detail View</text>
+    </div>
+</div>

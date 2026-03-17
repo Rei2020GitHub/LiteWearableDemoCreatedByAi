@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "D:/Project/GitHub/LiteWearableDemoCreatedByAi/keystore.p12",
+          "storePassword": "00000018EA968763A52268609A63ABFCB1F8A6E5349CF592984658D92A0480FA3422EE8D41A0623E",
+          "keyAlias": "alias",
+          "keyPassword": "000000186A6EBB18D9781DE4D1645090C059A0637B521B526A5B830BF01DC763608C5D68B3BDD916",
+          "signAlg": "SHA256withECDSA",
+          "profile": "D:/Project/GitHub/LiteWearableDemoCreatedByAi/Sport Watch Demo - DebugDebug.p7b",
+          "certpath": "D:/Project/GitHub/LiteWearableDemoCreatedByAi/Debug cert.cer"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.1(21)",
+        "compatibleSdkVersion": "4.0.0(10)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": false
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

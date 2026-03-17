@@ -1,0 +1,19 @@
+<div class="container">
+    <text class="title">Posture Advisor</text>
+
+    <div class="status-box" show="{{isGoodPosture}}">
+        <image src="/common/ok_mark.png" class="status-icon"></image>
+        <text class="message-good">Good Posture</text>
+    </div>
+
+    <div class="status-box" show="{{!isGoodPosture}}">
+        <image src="/common/warning_mark.png" class="status-icon"></image>
+        <text class="message-bad">Check Your Arm!</text>
+    </div>
+
+    <text class="hint">Keep your wrist level.</text>
+
+    <div class="back-btn" onclick="goBack">
+        <text class="btn-text">Back</text>
+    </div>
+</div>

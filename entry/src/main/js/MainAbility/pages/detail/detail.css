@@ -1,0 +1,60 @@
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 454px;
+    height: 454px;
+    background-color: #000000;
+}
+
+.title {
+    font-size: 24px;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+.status-box {
+    flex-direction: column;
+    align-items: center;
+/* 修正ポイント：幅と高さを明示的に指定する */
+    width: 300px;
+    height: 200px;
+}
+
+.status-icon {
+    width: 100px;
+    height: 100px;
+/* 念のため背景色がなくても表示されるはずですが、サイズ指定が必須です */
+}
+
+.message-good {
+    font-size: 32px;
+    color: #00ff00; /* 緑 */
+}
+
+.message-bad {
+    font-size: 32px;
+    color: #ff0000; /* 赤 */
+}
+
+.hint {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-btn {
+    width: 160px;
+    height: 45px;
+    background-color: #333333;
+    border-radius: 22px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.btn-text {
+    font-size: 20px;
+    color: #ffffff;
+}
